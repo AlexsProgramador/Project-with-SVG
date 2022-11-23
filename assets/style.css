@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    background-color: #FFEAD4;
+    overflow-x: hidden;
+}
+
+.container-header {
+    width: 100vw;
+}
+
+.left-header{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80%;
+    margin-top: 5%;
+    fill: transparent;
+    animation: left-preenchimento 1s ease-in-out forwards 5s;
+}
+
+.left-header path{
+    stroke: 2px;
+    stroke: #BE253F;
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 3000;
+    animation: left-traçado 4s ease-in-out forwards 2s;
+}
+
+h1, h2 {
+    font-family: 'Pacifico', cursive;
+    color: #BE253F;
+    text-align: center;
+}
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 1.5em;
+}
+p {
+    font-family: 'Lato', sans-serif;
+    color: #484848;
+    font-size: 1em;
+}
+
+@keyframes left-traçado {
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes left-preenchimento {
+    to{
+        fill: #BE253F;
+    }
+}
+
+.container-cards {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+.card {
+    background-color: white;
+    border-radius: 10px;
+    width: 50%;
+    padding: 20px;
+    margin: 20px;
+}
+
+.lett-footer{
+    width: 60%;
+    fill: #ffff;
+    opacity: 0.8;
+    position: absolute;
+    left: 20%;
+    margin-top: 20%;
+}
+.container-footer {
+    position: relative;
+
+}
+
+.footer-infos{
+    text-align: center;
+}
